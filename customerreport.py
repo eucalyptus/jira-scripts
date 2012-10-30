@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from jiraauth import jclient as jira
 
 '''

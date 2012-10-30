@@ -1,3 +1,4 @@
+
 # NOTE: you must have jira-python in your PYTHONPATH for this to work
 from jira.client import JIRA
 from tools.jirashell import process_config
