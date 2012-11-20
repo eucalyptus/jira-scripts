@@ -5,10 +5,11 @@ from jiraauth import jclient as jira
 from collections import namedtuple
 
 '''
-Synopsis:  This script runs an arbitrary JQL search
-Example: jqlsearch.py 'project="SUP" and reporter="nbeard"'
+Synopsis:  This script runs a series of JQL searches to tally the number of 
+bugs in various states.  Currently there is some small overlap between a
+couple of the searches, so the sum total will be greater than the actual
+number of bugs in the system.  This should be fixed.
 '''
-
 
 
 QueryData = namedtuple('QueryData', ['issuetype', 'status', 'reporter', 'assignee', 'SLA', 'level', 'flagged'])
